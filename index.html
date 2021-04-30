@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owl Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Set up your HTML -->
+    <h1>My Testimonials</h1>
+    <div class="owl-carousel">
+      <div class="content">
+        <img src="/images.jpeg" alt="" style="width: 90px" />
+        <div class="content-container">
+          <h2>Mpendulo Khoza</h2>
+          <h3>CEO</h3>
+          <q
+            >Good in communication and she give good spirit in the working
+            enviroment.She is dedicated to what she does.</q
+          >
+        </div>
+      </div>
+      <div class="content">
+        <img src="/index1.jpeg" alt="" style="width: 90px" />
+        <div class="content-container1">
+          <h2>Zipho Sithandathu</h2>
+          <h3>HR Manager</h3>
+          <q>
+            She is a lovely mate who have a postive atitude towards her work and
+            studies.
+          </q>
+        </div>
+      </div>
+      <div class="content">
+        <img src="/index.jpeg" alt="" style="width: 90px" />
+        <div class="content-container2">
+          <h2>Mzwandile Stuurman</h2>
+          <h3>Marketing Manager</h3>
+          <q
+            >Retshepile is a good person, she is sweet and kind, easy to work
+            with.</q
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Script tags under here -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+          responsive: {
+            0: {
+              margin: 0,
+              stagePadding: 0,
+            },
+            500: {
+              margin: 10,
+              stagePadding: 10,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
